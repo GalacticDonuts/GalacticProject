@@ -3,15 +3,9 @@
 global $project;
 $project = 'mysite';
 
-global $databaseConfig;
-$databaseConfig = array(
-	'type' => 'MySQLDatabase',
-	'server' => 'localhost',
-	'username' => 'root',
-	'password' => 'root',
-	'database' => 'DB1',
-	'path' => ''
-);
+global $database;
+$database = SS_DATABASE_NAME;
 
-// Set the site locale
-i18n::set_locale('en_US');
+require_once 'conf/ConfigureFromEnv.php';
+
+date_default_timezone_set('Pacific/Auckland');
