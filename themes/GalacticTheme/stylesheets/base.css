@@ -1,0 +1,15 @@
+/* line 1, ../sass/components/_test.scss */
+.test {
+  font-size: 14px;
+  color: red;
+}
+
+/* line 3, ../sass/base.scss */
+.hello {
+  background: black;
+}
+/* line 7, ../sass/base.scss */
+.hello .world {
+  color: red;
+  font-size: 16px;
+}

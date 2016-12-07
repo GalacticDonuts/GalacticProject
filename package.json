@@ -1,0 +1,26 @@
+{
+  "name": "ss-donuts",
+  "version": "1.0.0",
+  "description": "Galactic Donuts Website",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GalacticDonuts/GalacticProject.git"
+  },
+  "keywords": [
+    "donuts"
+  ],
+  "author": "Galactic Donuts",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GalacticDonuts/GalacticProject/issues"
+  },
+  "homepage": "https://github.com/GalacticDonuts/GalacticProject#readme"
+}

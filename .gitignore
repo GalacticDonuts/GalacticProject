@@ -14,3 +14,5 @@ _ss_environment.php
 /reports
 /siteconfig
 /silverstripe-*
+
+/node_modules
