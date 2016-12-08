@@ -1,4 +1,0 @@
-<div>
-	$Content
-</div>
-$Form

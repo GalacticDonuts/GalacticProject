@@ -3,9 +3,22 @@
 <html lang="$ContentLocale">
 
 <head>
-	<% require themedCSS("base") %>
+	$MetaTags
+
 </head>
 <body>
-	$Layout
+
+
+<% include Header %>
+
+<div class="page"> 
+	$Form
+	$Content
+</div>
+
+
+<% include Footer %>
+
+
 </body>
 </html>
