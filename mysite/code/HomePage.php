@@ -1,6 +1,5 @@
 <?php
-
-class AboutPage extends Page {
+class HomePage extends Page {
 
 	private static $db = array(
 	);
@@ -9,7 +8,7 @@ class AboutPage extends Page {
 	);
 
 }
-class AboutPage_Controller extends Page_Controller {
+class HomePage_Controller extends Page_Controller {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
@@ -31,6 +30,7 @@ class AboutPage_Controller extends Page_Controller {
 
 	public function init() {
 		parent::init();
+		
 		
 		// You can include any CSS or JS required by your project here.
 		// See: http://doc.silverstripe.org/framework/en/reference/requirements
