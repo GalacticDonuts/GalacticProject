@@ -11,11 +11,7 @@
 
 <% include Header %>
 
-<div class="page"> 
-	$Form
-	$Content
-</div>
-
+	$Layout
 
 <% include Footer %>
 

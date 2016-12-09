@@ -1,40 +1,27 @@
 <?php
+
+
+
 class AboutPage extends Page {
 
-	private static $db = array(
-		
-		'Description1' => 'HTMLText',
-		'Description2' => 'HTMLText'
+	private static $has_many = array(
+
+		"Bios" => "Bio"
 	);
 
-	private static $has_one = array(
-		'ProfilePic1' => 'Image',
-		'ProfilePic2' => 'Image'
-	);
+	public function getCMSFields(){
 
-	public function getCMSFields() {
+		$fields = parent::getCMSFields();
 
-    $fields = parent::getCMSFields();
-    
-    $fields->addFieldToTab('Root.Main', $uploadField = new UploadField(
-                $name = 'ProfilePic1',
-                $title = 'Upload a Profile Picture'
-            )    
-    );
-    $fields->addFieldToTab('Root.Main', HtmlEditorField::create('Description1', 'Profile Description'));
+		$config = new GridFieldConfig_RecordEditor();
+		$gridField = new GridField("Bios", "Bios", $this->Bios(), $config);
 
-   $fields->addFieldToTab('Root.Main', $uploadField = new UploadField(
-               $name = 'ProfilePic2',
-               $title = 'Upload a Profile Picture'
-           )    
-    );
-    $fields->addFieldToTab('Root.Main', HtmlEditorField::create('Description2', 'Profile Description'));
+		$fields->addFieldToTab('Root.Bios', $gridField);
 
-    return $fields;
+		return $fields;
+	}	
 
-  }
-
-
+	
 }
 class AboutPage_Controller extends Page_Controller {
 
