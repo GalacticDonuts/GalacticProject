@@ -1,3 +1,4 @@
+
 // Import Bootstrap Compass integration
 @import "bootstrap-compass";
 
@@ -7,14 +8,89 @@
 // Import Bootstrap for Sass
 @import "bootstrap";
 
-.hello{
-	
-	background: black;
-
-	.world{
-
-		color: red;
-		font-size: 16px;
-
-	}
+.header {
+	/*width: 768px;*/
+	// height: 79px; 
+	background-color: #f10079;
+	/*text-align: right;*/
 }
+
+.footer {
+	/*width: 768px; */
+	// height: 61px; 
+	background-color: #f10079;
+}
+
+.page {
+	background-color: #0B1C28;
+}
+
+body { font-family: "Open Sans", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 400;
+	font-style: normal;
+	color: $white;
+
+}
+
+p { font-family: "Open Sans", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 400;
+	font-style: normal;
+	color: $white;
+}
+
+.lead { font-family: "Simply Rounded", Arial, sans-serif;
+	font-size: 24px;
+	line-height: 1.4;
+	font-weight: 400;
+	font-style: normal;
+	color: $white;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.2); /* offset-x - offset-y - blur-radius - rgba */
+}
+
+h1 { font-family: "Simply Rounded", Arial, sans-serif;
+	font-size: 42px;
+	line-height: 1.2;
+	font-weight: 400;
+	font-style: normal;
+	color: $white;
+	text-shadow: 2px 2px 2px rgba(0,0,0,0.2); /* offset-x - offset-y - blur-radius - rgba */
+}
+
+h2 { font-family: "Simply Rounded", Arial, sans-serif;
+	font-size: 30px;
+	line-height: 1.3;
+	font-weight: 400;
+	font-style: normal;
+	color: $white;
+}
+
+h3 { font-family: "Open Sans", Arial, sans-serif;
+	font-size: 22px;
+	line-height: 1.4;
+	font-weight: 400;
+	font-style: normal;
+	color: $white;
+}
+
+h4 { font-family: "Open Sans", Arial, sans-serif;
+	font-size: 20px;
+	line-height: 1.5;
+	font-weight: 400;
+	font-style: normal;
+	color: $white;
+}
+
+h5 { font-family: "Open Sans", Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.6;
+	font-weight: 400;
+	font-style: normal;
+	text-align: center;
+	color: $white;
+	margin-top: 
+}
+

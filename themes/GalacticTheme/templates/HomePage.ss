@@ -1,13 +1,3 @@
-<!DOCTYPE html>
-
-<html lang="$ContentLocale">
-
-<head>
-	$MetaTags
-	
-</head>
-<body>
-
 
 <% include Header %>
 
@@ -21,7 +11,3 @@
 
 
 <% include Footer %>
-
-
-</body>
-</html>
