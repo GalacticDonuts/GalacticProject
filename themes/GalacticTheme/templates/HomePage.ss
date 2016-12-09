@@ -4,7 +4,7 @@
 
 <head>
 	$MetaTags
-	
+	<% base_tag %>
 </head>
 <body>
 

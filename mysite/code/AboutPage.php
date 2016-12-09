@@ -1,17 +1,34 @@
 <?php
-class HomePage extends Page {
+class AboutPage extends Page {
 
 	private static $db = array(
-		'Video' => 'Text',
+		
+		'Description1' => 'HTMLText',
+		'Description2' => 'HTMLText'
 	);
 
 	private static $has_one = array(
+		'ProfilePic1' => 'Image',
+		'ProfilePic2' => 'Image'
 	);
 
 	public function getCMSFields() {
 
     $fields = parent::getCMSFields();
-    $fields->addFieldToTab('Root.Main', TextareaField::create('Video', 'Upload your video here'));
+    
+    $fields->addFieldToTab('Root.Main', $uploadField = new UploadField(
+                $name = 'ProfilePic1',
+                $title = 'Upload a Profile Picture'
+            )    
+    );
+    $fields->addFieldToTab('Root.Main', HtmlEditorField::create('Description1', 'Profile Description'));
+
+   $fields->addFieldToTab('Root.Main', $uploadField = new UploadField(
+               $name = 'ProfilePic2',
+               $title = 'Upload a Profile Picture'
+           )    
+    );
+    $fields->addFieldToTab('Root.Main', HtmlEditorField::create('Description2', 'Profile Description'));
 
     return $fields;
 
@@ -19,7 +36,7 @@ class HomePage extends Page {
 
 
 }
-class HomePage_Controller extends Page_Controller {
+class AboutPage_Controller extends Page_Controller {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the

@@ -12,8 +12,17 @@
 <% include Header %>
 
 <div class="page"> 
-	$Form
-	$Content
+	<!--$Form
+	$Content-->
+
+	<h1>$Title</h1>
+
+    $ProfilePic1
+    $Description1
+    
+    $ProfilePic2
+    $Description2
+
 </div>
 
 
