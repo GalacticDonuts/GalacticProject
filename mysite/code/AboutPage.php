@@ -1,25 +1,29 @@
 <?php
-class HomePage extends Page {
 
-	private static $db = array(
-		'Video' => 'Text',
+
+
+class AboutPage extends Page {
+
+	private static $has_many = array(
+
+		"Bios" => "Bio"
 	);
 
-	private static $has_one = array(
-	);
+	public function getCMSFields(){
 
-	public function getCMSFields() {
+		$fields = parent::getCMSFields();
 
-    $fields = parent::getCMSFields();
-    $fields->addFieldToTab('Root.Main', TextareaField::create('Video', 'Upload your video here'));
+		$config = new GridFieldConfig_RecordEditor();
+		$gridField = new GridField("Bios", "Bios", $this->Bios(), $config);
 
-    return $fields;
+		$fields->addFieldToTab('Root.Bios', $gridField);
 
-  }
+		return $fields;
+	}	
 
-
+	
 }
-class HomePage_Controller extends Page_Controller {
+class AboutPage_Controller extends Page_Controller {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
