@@ -1,21 +1,7 @@
-<!DOCTYPE html>
+<% require themedCSS("base") %>
 
-<html lang="$ContentLocale">
-
-<head>
-	$MetaTags
-	
-</head>
-<body>
-
-<div class="header">	
-
-<ul> 
-	
+<div class="header">
 	<% loop $Menu(1) %>
-
- 		<li><a class=”$LinkingMode” href=$Link title=”Go to the $Title page”>$MenuTitle</a></li>
-
+ 		<a class="$LinkingMode" href="$Link" title=”Go to the $Title page”>$MenuTitle</a>
 	<% end_loop %>
-</ul>
 </div>
