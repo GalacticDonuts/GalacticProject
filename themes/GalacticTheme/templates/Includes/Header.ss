@@ -1,7 +1,24 @@
 <% require themedCSS("base") %>
-
+	
 <div class="header">
-	<% loop $Menu(1) %>
- 		<a class="$LinkingMode" href="$Link" title=”Go to the $Title page”>$MenuTitle</a>
-	<% end_loop %>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="header_logo"></div>
+			</div>
+			<div class="col-sm-8">
+				<% if $Menu(1) %>
+					<ul class="nav_header">
+						<% loop $Menu(1) %>
+							<li class="nav_item">
+								<a class="{$LinkingMode} nav_link" href="{$Link}" title="Go to the {$Title} page">
+									$MenuTitle
+								</a>
+							</li>
+						<% end_loop %>
+					</ul>
+				<% end_if %>
+			</div>
+		</div>
+	</div>
 </div>
