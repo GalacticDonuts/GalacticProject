@@ -7365,13 +7365,10 @@ body {
   padding-top: 40px;
 }
 .header_logo {
-  min-width: 300px;
-  min-height: 90px;
+  min-width: 150px;
+  min-height: 60px;
   background: url("../images/logo.svg");
-  background-size: 100%;
   background-repeat: no-repeat;
-  background-position: left top;
-  padding-top: 100px;
 }
 
 .footer {
@@ -7483,6 +7480,20 @@ h5 {
   font-size: 16px;
   line-height: 1.6;
   font-weight: 700;
+  color: #fff;
+}
+
+h6 {
+  font-family: "Simply Rounded", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+}
+
+address {
+  font-family: "Simply Rounded", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
   color: #fff;
 }
 

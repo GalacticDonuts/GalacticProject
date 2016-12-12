@@ -1,10 +1,10 @@
 <% require themedCSS("base") %>
 	
 <div class="header">
-	<div class="container">
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="header_logo"></div>
+	<div class="header_logo"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
 			</div>
 			<div class="col-sm-8">
 				<% if $Menu(1) %>
