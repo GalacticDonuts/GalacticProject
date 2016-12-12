@@ -1,28 +1,17 @@
-<div class="page"> 
+<% require themedCSS("base") %>
 	
 	$Form
-	$Content
-
-	<div class="iframe"> 
-		<iframe src="$Video" frameborder="0" allowfullscreen></iframe>
-	</div>
-	<style> 
-		.iframe{
-			position: relative;
-			width: 100%;
-			padding-bottom: 56.25%;
-
-		}
-		.iframe iframe{
-			top: 0;
-			left: 0;
-			position: absolute;
-			width: 100%;
-			height: 100%;
-		}
-
-	</style>
-
+		
+<div class="iframe"> 
+	<div class="container">
+		<div class="row"> 
+			<div class="col-sm-2"></div>
+			<div class="col-sm-8">
+				<div class="title-text"> $Content </div>
+			</div>
+			<iframe src="$Video" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>	
 </div>
 
 
