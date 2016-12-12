@@ -8,6 +8,12 @@
 // Import Bootstrap for Sass
 @import "bootstrap";
 
+
+html{
+	height: 100%;
+	box-sizing: border-box;
+}
+
 a {
 	color: $white;
 }
@@ -24,6 +30,7 @@ a {
 
 body {
 	background-color: #0B1C28;
+	
 }
 
 .header {
@@ -45,30 +52,36 @@ body {
 }
 
 .footer { 
-	font-family: "Simply Rounded", Arial, sans-serif;
-	font-size: 16px;
+	
 	background-color: #f10079;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 25px;
+	position: absolute;
+	height: 7%;
+	width: 100%;
+	bottom: 0;
 
+	&_text {
+		text-align: right;
+		font-family: "Simply Rounded", Arial, sans-serif;
+		font-size: 16px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
-	&_logo {
+	&_twitter {
 		min-width: 24px;
 		min-height: 24px;
-		padding-top: 2px;
 		background: url("../images/twittericon.svg");
 		background-repeat: no-repeat;
-		display: inline;
-		// padding-left: 230px;
+		margin-left: auto;
+		margin-right: auto;
 	}	
-	// &_text {
-	// 	text-align: center;		
-	// }
+	
 }
 
-//.page {
+/*//.page {
 //	background-color: #0B1C28;
-//}
+//}*/
 
 .title-text {
    text-align: center;
