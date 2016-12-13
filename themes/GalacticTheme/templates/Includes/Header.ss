@@ -1,12 +1,10 @@
 <% require themedCSS("base") %>
-	
+
 <div class="header">
-	<div class="header_logo"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-4">
-			</div>
-			<div class="col-sm-8">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-4 col-md-4 header_logo"></div>
+			<div class="col-xs-8 col-md-8">
 				<% if $Menu(1) %>
 					<ul class="nav_header">
 						<% loop $Menu(1) %>
@@ -22,3 +20,5 @@
 		</div>
 	</div>
 </div>
+
+
