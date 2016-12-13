@@ -7335,8 +7335,8 @@ button.close {
   }
 }
 html {
-  height: 100%;
-  box-sizing: border-box;
+  /*	height: 100%;
+  	box-sizing: border-box;*/
 }
 
 a {
@@ -7365,19 +7365,22 @@ body {
   padding-top: 40px;
 }
 .header_logo {
-  min-width: 150px;
-  min-height: 60px;
+  min-width: 300px;
+  min-height: 90px;
   background: url("../images/logo.svg");
+  background-size: 100%;
   background-repeat: no-repeat;
+  background-position: left top;
+  padding-top: 100px;
 }
 
 .footer {
   background-color: #f10079;
-  padding-top: 25px;
-  position: absolute;
+  /*position: absolute;*/
   height: 7%;
   width: 100%;
   bottom: 0;
+  padding: 25px;
 }
 .footer_text {
   text-align: right;
@@ -7406,7 +7409,7 @@ body {
   z-index: 3;
   margin-left: 10%;
   margin-right: 10%;
-  padding-top: 35px;
+  padding-top: 45px;
 }
 
 body {
