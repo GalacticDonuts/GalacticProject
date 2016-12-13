@@ -7335,8 +7335,8 @@ button.close {
   }
 }
 html {
-  height: 100%;
-  box-sizing: border-box;
+  /*	height: 100%;
+  	box-sizing: border-box;*/
 }
 
 a {
@@ -7376,11 +7376,11 @@ body {
 
 .footer {
   background-color: #f10079;
-  padding-top: 25px;
-  position: absolute;
+  /*position: absolute;*/
   height: 7%;
   width: 100%;
   bottom: 0;
+  padding: 25px;
 }
 .footer_text {
   text-align: right;
@@ -7483,6 +7483,20 @@ h5 {
   font-size: 16px;
   line-height: 1.6;
   font-weight: 700;
+  color: #fff;
+}
+
+h6 {
+  font-family: "Simply Rounded", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  color: #fff;
+}
+
+address {
+  font-family: "Simply Rounded", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
   color: #fff;
 }
 
