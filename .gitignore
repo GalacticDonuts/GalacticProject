@@ -16,3 +16,4 @@ _ss_environment.php
 /silverstripe-*
 
 /node_modules
+.sass_cache
