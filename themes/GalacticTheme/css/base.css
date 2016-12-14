@@ -7335,8 +7335,8 @@ button.close {
   }
 }
 html {
-  /*	height: 100%;
-  	box-sizing: border-box;*/
+  position: relative;
+  min-height: 100%;
 }
 
 a {
@@ -7355,6 +7355,7 @@ a {
 
 body {
   background-color: #0B1C28;
+  margin: 0 0 70px;
 }
 
 .header {
@@ -7365,10 +7366,8 @@ body {
   padding-top: 40px;
 }
 .header_logo {
-
   min-height: 100px;
   background: url("../images/logo.svg");
-  background-size: 100%;
   background-repeat: no-repeat;
   margin-bottom: -30px;
   z-index: 10;
@@ -7376,11 +7375,11 @@ body {
 
 .footer {
   background-color: #f10079;
-  /*position: absolute;*/
-  height: 7%;
+  height: 70px;
   width: 100%;
   bottom: 0;
   padding: 25px;
+  position: absolute;
 }
 .footer_text {
   text-align: right;
@@ -7398,9 +7397,6 @@ body {
   margin-right: auto;
 }
 
-/*//.page {
-//	background-color: #0B1C28;
-//}*/
 .title-text {
   text-align: center;
   position: absolute;

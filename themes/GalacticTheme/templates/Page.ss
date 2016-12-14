@@ -7,12 +7,14 @@
 	<% base_tag %>
 </head>
 <body>
-<div class="page">
-	<% include Header %>
-		
-		$Layout
 
-	<% include Footer %>
-</div>
+<% include Header %>
+	
+	<div class="page">
+		$Layout
+	</div>
+
+<% include Footer %>
+
 </body>
 </html>

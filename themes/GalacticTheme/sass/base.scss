@@ -8,10 +8,9 @@
 // Import Bootstrap for Sass
 @import "bootstrap";
 
-
 html{
-/*	height: 100%;
-	box-sizing: border-box;*/
+	position: relative;
+	min-height: 100%;
 }
 
 a {
@@ -30,6 +29,7 @@ a {
 
 body {
 	background-color: #0B1C28;
+	margin: 0 0 70px;
 	
 }
 
@@ -40,24 +40,28 @@ body {
 	text-align: right;
 	padding-top: 40px;
 
-&_logo {
-	min-height: 100px;
-	background: url("../images/logo.svg");
-	background-repeat: no-repeat;
-	margin-bottom: -30px;
-	z-index: 10;
-}
+	&_logo {
+		min-height: 100px;
+		background: url("../images/logo.svg");
+		background-repeat: no-repeat;
+		margin-bottom: -30px;
+		z-index: 10;
 	}
+}
+
+.page{
+
+}
 
 .footer { 
-	
+
 	background-color: #f10079;
-	
-	/*position: absolute;*/
-	height: 7%;
+	height: 70px;
 	width: 100%;
 	bottom: 0;
 	padding: 25px;
+	position: absolute;
+
 	&_text {
 		text-align: right;
 		font-family: "Simply Rounded", Arial, sans-serif;
@@ -76,10 +80,6 @@ body {
 	}	
 	
 }
-
-/*//.page {
-//	background-color: #0B1C28;
-//}*/
 
 .title-text {
    text-align: center;
