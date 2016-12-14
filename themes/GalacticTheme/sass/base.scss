@@ -17,7 +17,9 @@
 // Import Typography
 @import "base/typography";
 
-html{
+html {
+	position: relative;
+	min-height: 100%;
 }
 
 .nav_header {
@@ -32,7 +34,7 @@ html{
 
 body {
 	background-color: $background-color;
-	
+	margin: 0 0 70px;
 }
 
 .header {
@@ -42,24 +44,26 @@ body {
 	text-align: right;
 	padding-top: 40px;
 
-&_logo {
-	min-height: 100px;
-	background: url("../images/logo.svg");
-	background-repeat: no-repeat;
-	margin-bottom: -30px;
-	z-index: 10;
-}
+	&_logo {
+		min-height: 100px;
+		background: url("../images/logo.svg");
+		background-repeat: no-repeat;
+		margin-bottom: -30px;
+		z-index: 10;
 	}
+}
+
+.page{
+
+}
 
 .footer { 
-	
 	background-color: $headerfooter-colour;
-	
-	/*position: absolute;*/
-	height: 7%;
-	width: 100%;
 	bottom: 0;
+	height: 70px;
 	padding: 25px;
+	position: absolute;
+	width: 100%;
 
 	&_text {
 		text-align: right;
@@ -80,19 +84,15 @@ body {
 	
 }
 
-/*//.page {
-//	background-color: #0B1C28;
-//}*/
-
 .title-text {
-   text-align: center;
-   position: absolute;
-   height: 97px;
-   width: 80%;
-   z-index: 3; 
-   margin-left: 10%;
-   margin-right: 10%;
-   padding-top: 45px;
+	text-align: center;
+	position: absolute;
+	height: 97px;
+	width: 80%;
+	z-index: 3; 
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-top: 45px;
 }
 
 .iframe{

@@ -1,8 +1,12 @@
 <?php
+
+use Detection\MobileDetect as MobileDetect;
+
 class HomePage extends Page {
 
 	private static $db = array(
 		'Video' => 'Text',
+		'MobileVideo' => 'Text'
 	);
 
 	private static $has_one = array(
@@ -12,6 +16,8 @@ class HomePage extends Page {
 
     $fields = parent::getCMSFields();
     $fields->addFieldToTab('Root.Main', TextareaField::create('Video', 'Upload your video here'));
+
+    $fields->addFieldToTab('Root.Main', TextareaField::create('MobileVideo', 'Upload your Mobile Video here'));
 
     return $fields;
 
@@ -47,4 +53,15 @@ class HomePage_Controller extends Page_Controller {
 		// See: http://doc.silverstripe.org/framework/en/reference/requirements
 	}
 
+	public function Video(){
+
+		$agent = new MobileDetect();
+
+		if($agent->isMobile() && !$agent->isTablet() ){
+			
+			return $this->MobileVideo;
+		}
+		
+		return $this->Video;
+	}
 }
