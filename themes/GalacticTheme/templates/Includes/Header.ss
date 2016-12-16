@@ -1,5 +1,3 @@
-<% require themedCSS("base") %>
-
 <div class="header">
 	<div class="container">
 		<div class="row">
