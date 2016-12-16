@@ -10,5 +10,3 @@ After:
 SSViewer:
   theme: 'GalacticTheme'
 
-BlogPost:
-show_in_sitetree: true

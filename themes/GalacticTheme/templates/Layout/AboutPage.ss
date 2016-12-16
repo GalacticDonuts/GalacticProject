@@ -1,15 +1,15 @@
-<div class="page"> 
 
-    <h1>$Title</h1>
 
-    <% loop $Bios %>
+<h1>$Title</h1>
 
-        $ProfilePic
-        $Description
+<% loop $Bios %>
 
-    <% end_loop %>
+    $ProfilePic
+    $Description
 
-</div>
+<% end_loop %>
+
+
 
 
 
