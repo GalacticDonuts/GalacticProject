@@ -97,6 +97,30 @@ body {
 
 // ========== BLOG STYLES ==============
 
+// ========== ABOUT STYLES =============
+.about{
+
+	&_header{
+		margin-top: 120px;
+		margin-bottom: 70px;
+		text-align: center;
+	}
+
+	&_content{
+		margin-bottom: 50px;
+		text-align: left;
+
+		&_text{
+			margin-top: 30px;
+		}
+	}
+
+}
+
+
+// ========== ABOUT STYLES =============
+
+
 .header {
 	font-family: $font-family-rounded;
 	font-size: $font-size-h6;

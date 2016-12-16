@@ -7546,6 +7546,19 @@ body {
   text-align: center;
 }
 
+.about_header {
+  margin-top: 120px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+.about_content {
+  margin-bottom: 50px;
+  text-align: left;
+}
+.about_content_text {
+  margin-top: 30px;
+}
+
 .header {
   font-family: "simply rounded", Arial, sans-serif;
   font-size: 24px;
