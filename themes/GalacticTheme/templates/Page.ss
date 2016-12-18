@@ -12,12 +12,12 @@
     <title>Galactic Donuts</title>
 
     <!-- Bootstrap -->
+    
     <% require themedCSS("base") %>
 
 <% require javascript("themes/GalacticTheme/javascript/jQuery-1.9.1.min.js") %>
 
     <% require javascript("themes/GalacticTheme/javascript/bootstrap.min.js") %>
-
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,6 +28,8 @@
 
 </head>
 <body>
+
+<% require themedCSS("base") %>
 
 <% include Header %>
 	
