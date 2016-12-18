@@ -289,7 +289,7 @@ $line-height-base:        1.5;
 
 // Small screen / tablet
 //** Deprecated `$screen-sm` as of v3.0.1
-// $screen-sm:                  768px
+$screen-sm:                  768px; //desktop first
 // $screen-sm-min:              $screen-sm
 //** Deprecated `$screen-tablet` as of v3.0.1
 // $screen-tablet:              $screen-sm-min
@@ -309,7 +309,7 @@ $line-height-base:        1.5;
 // $screen-lg-desktop:          $screen-lg-min
 
 // So media queries don't overlap when required, provide a maximum
-// $screen-xs-max:              ($screen-sm-min - 1)
+$screen-xs-max:              ($screen-sm - 1); //mobile first
 // $screen-sm-max:              ($screen-md-min - 1)
 // $screen-md-max:              ($screen-lg-min - 1)
 
@@ -351,8 +351,8 @@ $line-height-base:        1.5;
 //##
 
 // Basics of a navbar
-// $navbar-height:                    50px
-// $navbar-margin-bottom:             $line-height-computed
+ //$navbar-height:                    50px;
+ // $navbar-margin-bottom:             $line-height-computed;
 // $navbar-border-radius:             $border-radius-base
 // $navbar-padding-horizontal:        floor(($grid-gutter-width / 2))
 // $navbar-padding-vertical:          (($navbar-height - $line-height-computed) / 2)
@@ -363,23 +363,23 @@ $line-height-base:        1.5;
 // $navbar-default-border:            darken($navbar-default-bg, 6.5%)
 
 // Navbar links
-// $navbar-default-link-color:                #777
-// $navbar-default-link-hover-color:          #333
-// $navbar-default-link-hover-bg:             transparent
-// $navbar-default-link-active-color:         #555
+$navbar-default-link-color:                #fff;
+$navbar-default-link-hover-color:          #fff;
+ $navbar-default-link-hover-bg:             #A10457;
+ $navbar-default-link-active-color:         #555;
 // $navbar-default-link-active-bg:            darken($navbar-default-bg, 6.5%)
 // $navbar-default-link-disabled-color:       #ccc
 // $navbar-default-link-disabled-bg:          transparent
 
 // Navbar brand label
 // $navbar-default-brand-color:               $navbar-default-link-color
-// $navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 10%)
+//$navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 10%)
 // $navbar-default-brand-hover-bg:            transparent
 
-// Navbar toggle
-// $navbar-default-toggle-hover-bg:           #ddd
-// $navbar-default-toggle-icon-bar-bg:        #888
-// $navbar-default-toggle-border-color:       #ddd
+// // Navbar toggle
+ $navbar-default-toggle-hover-bg:           #A10457;
+$navbar-default-toggle-icon-bar-bg:        #fff;
+ $navbar-default-toggle-border-color:       #fff;
 
 //=== Inverted navbar
 // Reset inverted navbar basics
@@ -418,7 +418,8 @@ $line-height-base:        1.5;
 // $nav-disabled-link-hover-color:             $gray-light
 
 //== Tabs
-// $nav-tabs-border-color:                     #ddd
+
+ $nav-tabs-border-color:                     #fff;
 
 // $nav-tabs-link-hover-border-color:          $gray-lighter
 
