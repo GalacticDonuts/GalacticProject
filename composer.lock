@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "cc2c1229258a98e4a3cfbada81c2f700",
-    "content-hash": "d69ebed57c2775a651d27e35b8dec9f3",
+    "hash": "f52de8d870365b2db15da264c436447b",
+    "content-hash": "b09265ae1e08e99ab4cc8e75ceea4579",
     "packages": [
         {
             "name": "composer/installers",
@@ -661,6 +661,49 @@
                 "userforms"
             ],
             "time": "2016-11-16 23:39:49"
+        },
+        {
+            "name": "tractorcow/silverstripe-twitter",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tractorcow/silverstripe-twitter.git",
+                "reference": "56ba3495d6f0b2d76d90c2c41f8a4bdbfe5a62b6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tractorcow/silverstripe-twitter/zipball/56ba3495d6f0b2d76d90c2c41f8a4bdbfe5a62b6",
+                "reference": "56ba3495d6f0b2d76d90c2c41f8a4bdbfe5a62b6",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "silverstripe/framework": ">=3.1"
+            },
+            "suggest": {
+                "silverstripe/widgets": "Put your tweets in your blog or page sidebar!"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "twitter"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Damian Mooyman",
+                    "email": "damian.mooyman@gmail.com"
+                }
+            ],
+            "description": "Simple Twitter feed for Silverstripe",
+            "keywords": [
+                "silverstripe",
+                "twitter",
+                "widget"
+            ],
+            "time": "2015-07-15 22:44:14"
         }
     ],
     "packages-dev": [
@@ -1082,6 +1125,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "tractorcow/silverstripe-twitter": 20,
         "phpunit/phpunit": 0
     },
     "prefer-stable": true,
