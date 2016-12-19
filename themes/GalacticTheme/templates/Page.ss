@@ -33,9 +33,9 @@
 
 <% include Header %>
 	
-	<div class="page">
+<%-- 	<div class="page"> --%>
 		$Layout
-	</div>
+<%-- 	</div> --%>
 
 <% include Footer %>
 
