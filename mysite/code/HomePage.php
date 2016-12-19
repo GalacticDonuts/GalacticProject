@@ -53,15 +53,15 @@ class HomePage_Controller extends Page_Controller {
 		// See: http://doc.silverstripe.org/framework/en/reference/requirements
 	}
 
-	public function Video(){
+	public function AutoPlayVideo(){
 
 		$agent = new MobileDetect();
 
 		if($agent->isMobile() && !$agent->isTablet() ){
 			
-			return $this->MobileVideo;
+			return "";
 		}
 		
-		return $this->Video;
+		return "autoplay loop";
 	}
 }
