@@ -310,8 +310,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?1481494022);
-  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?&1481494022#iefix) format("embedded-opentype"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff2?1481494022) format("woff2"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff?1481494022) format("woff"), url(/fonts/bootstrap/glyphicons-halflings-regular.ttf?1481494022) format("truetype"), url(/fonts/bootstrap/glyphicons-halflings-regular.svg?1481494022#glyphicons_halflingsregular) format("svg");
+  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?1481227856);
+  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?&1481227856#iefix) format("embedded-opentype"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff2?1481227856) format("woff2"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff?1481227856) format("woff"), url(/fonts/bootstrap/glyphicons-halflings-regular.ttf?1481227856) format("truetype"), url(/fonts/bootstrap/glyphicons-halflings-regular.svg?1481227856#glyphicons_halflingsregular) format("svg");
 }
 .glyphicon {
   position: relative;
@@ -4541,7 +4541,7 @@ tbody.collapse.in {
 }
 
 .nav-tabs {
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #fff;
 }
 .nav-tabs > li {
   float: left;
@@ -4554,7 +4554,7 @@ tbody.collapse.in {
   border-radius: 4px 4px 0 0;
 }
 .nav-tabs > li > a:hover {
-  border-color: #eeeeee #eeeeee #ddd;
+  border-color: #eeeeee #eeeeee #fff;
 }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
   color: #555555;
@@ -5016,21 +5016,21 @@ tbody.collapse.in {
   border-color: #e7e7e7;
 }
 .navbar-default .navbar-brand {
-  color: #777;
+  color: #fff;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-  color: #5e5e5e;
+  color: #e6e6e6;
   background-color: transparent;
 }
 .navbar-default .navbar-text {
   color: #777;
 }
 .navbar-default .navbar-nav > li > a {
-  color: #777;
+  color: #fff;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-  color: #333;
-  background-color: transparent;
+  color: #fff;
+  background-color: #A10457;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   color: #555;
@@ -5041,13 +5041,13 @@ tbody.collapse.in {
   background-color: transparent;
 }
 .navbar-default .navbar-toggle {
-  border-color: #ddd;
+  border-color: #fff;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-  background-color: #ddd;
+  background-color: #A10457;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #888;
+  background-color: #fff;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
@@ -5059,11 +5059,11 @@ tbody.collapse.in {
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: #777;
+    color: #fff;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #333;
-    background-color: transparent;
+    color: #fff;
+    background-color: #A10457;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #555;
@@ -5075,16 +5075,16 @@ tbody.collapse.in {
   }
 }
 .navbar-default .navbar-link {
-  color: #777;
+  color: #fff;
 }
 .navbar-default .navbar-link:hover {
-  color: #333;
+  color: #fff;
 }
 .navbar-default .btn-link {
-  color: #777;
+  color: #fff;
 }
 .navbar-default .btn-link:hover, .navbar-default .btn-link:focus {
-  color: #333;
+  color: #fff;
 }
 .navbar-default .btn-link[disabled]:hover, .navbar-default .btn-link[disabled]:focus, fieldset[disabled] .navbar-default .btn-link:hover, fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
@@ -7492,14 +7492,33 @@ html {
   min-height: 100%;
 }
 
-.nav_header {
-  padding: 20px;
-  list-style-type: none;
+.col-sm-8 {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  padding: 15px;
 }
 
 .nav_item {
-  display: inline;
-  padding: 16px 18px;
+  border-bottom: 1px solid;
+}
+@media (min-width: 767px) {
+  .nav_item {
+    border-bottom: 0;
+  }
+}
+
+.navbar-nav {
+  margin: 0 -15px;
+  padding-left: 0;
+}
+@media (min-width: 767px) {
+  .navbar-nav {
+    float: right;
+  }
 }
 
 body {
@@ -7581,14 +7600,13 @@ body {
   font-family: "simply rounded", Arial, sans-serif;
   font-size: 24px;
   background-color: #f10079;
-  text-align: right;
-  padding-top: 40px;
+  padding-top: 20px;
 }
 .header_logo {
-  min-height: 100px;
+  min-height: 90px;
   background: url("../images/logo.svg");
   background-repeat: no-repeat;
-  margin-bottom: -30px;
+  margin-bottom: -15px;
   z-index: 10;
 }
 
@@ -7644,7 +7662,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  opacity: 0.75;
+  z-index: -1;
 }
 
 .content img.center {
