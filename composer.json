@@ -10,7 +10,8 @@
 		"silverstripe-themes/simple": "3.1.*",
 		"silverstripe/blog": "^2.4",
 		"silverstripe/userforms": "^4.2",
-		"mobiledetect/mobiledetectlib": "^2.8"
+		"mobiledetect/mobiledetectlib": "^2.8",
+		"tractorcow/silverstripe-twitter": "3.1.*@dev"
 	},
 	"require-dev": {
 		"phpunit/PHPUnit": "~3.7@stable"

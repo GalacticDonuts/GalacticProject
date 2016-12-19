@@ -32,11 +32,7 @@
 <% require themedCSS("base") %>
 
 <% include Header %>
-	
-<%-- 	<div class="page"> --%>
 		$Layout
-<%-- 	</div> --%>
-
 <% include Footer %>
 
 </body>
