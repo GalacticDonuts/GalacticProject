@@ -2,7 +2,7 @@
   <div class="container"> 
   <div class="row">
 			<div class="col-sm-4 col-xs-6">
-     <div class=" header_logo"></div>
+     <a href="/Donuts"><div class="header_logo"></div></a>
       </div>
 			<div class="col-sm-8">
     <!-- Brand and toggle get grouped for better mobile display -->
