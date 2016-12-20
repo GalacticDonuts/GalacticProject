@@ -4,9 +4,87 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f52de8d870365b2db15da264c436447b",
-    "content-hash": "b09265ae1e08e99ab4cc8e75ceea4579",
+    "hash": "f4edca023ab78ea4c276be23496aa376",
+    "content-hash": "dc67b012d89ab54f944166db6ef3fbae",
     "packages": [
+        {
+            "name": "assertchris/hash-compat",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/assertchris/hash-compat.git",
+                "reference": "085131ed20472cf0716b969890d38e7ed2c8ccb0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/assertchris/hash-compat/zipball/085131ed20472cf0716b969890d38e7ed2c8ccb0",
+                "reference": "085131ed20472cf0716b969890d38e7ed2c8ccb0",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.6"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/hash.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Christopher Pitt",
+                    "email": "cgpitt@gmail.com"
+                }
+            ],
+            "description": "Provides forward compatibility with the hash_* functions that ship with PHP 5.5",
+            "time": "2015-05-05 23:42:48"
+        },
+        {
+            "name": "colymba/gridfield-bulk-editing-tools",
+            "version": "v2.1.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/colymba/GridFieldBulkEditingTools.git",
+                "reference": "0e6f2e6efbe8d0e9b397d51a5cd402886a0f2e96"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/colymba/GridFieldBulkEditingTools/zipball/0e6f2e6efbe8d0e9b397d51a5cd402886a0f2e96",
+                "reference": "0e6f2e6efbe8d0e9b397d51a5cd402886a0f2e96",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": ">=3.1"
+            },
+            "type": "silverstripe-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD Simplified"
+            ],
+            "authors": [
+                {
+                    "name": "Thierry Francois",
+                    "homepage": "http://colymba.com"
+                },
+                {
+                    "name": "GitHub contributors",
+                    "homepage": "https://github.com/colymba/GridFieldBulkEditingTools/contributors"
+                }
+            ],
+            "description": "SilverStripe 3 GridField component to upload images and edit records in bulk",
+            "homepage": "https://github.com/colymba/GridFieldBulkEditingTools",
+            "keywords": [
+                "Image upload",
+                "bulk upload",
+                "gridfield bulk upload",
+                "silverstripe"
+            ],
+            "time": "2016-11-16 08:47:05"
+        },
         {
             "name": "composer/installers",
             "version": "v1.2.0",
@@ -353,6 +431,50 @@
                 "silverstripe"
             ],
             "time": "2016-08-15 06:27:31"
+        },
+        {
+            "name": "silverstripe/comments",
+            "version": "2.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-comments.git",
+                "reference": "f74b13a2b73080179f04235edcced6e06e394581"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-comments/zipball/f74b13a2b73080179f04235edcced6e06e394581",
+                "reference": "f74b13a2b73080179f04235edcced6e06e394581",
+                "shasum": ""
+            },
+            "require": {
+                "assertchris/hash-compat": "~1.0",
+                "colymba/gridfield-bulk-editing-tools": "~2.1",
+                "silverstripe/framework": "~3.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7@stable"
+            },
+            "suggest": {
+                "ezyang/htmlpurifier": "Standards compliant HTML filter written in PHP",
+                "silverstripe/cms": "The SilverStripe Content Management System"
+            },
+            "type": "silverstripe-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Will Rossiter",
+                    "email": "will@fullscreen.io"
+                }
+            ],
+            "description": "This module provides commenting functionality for Pages and other DataObjects on your SilverStripe site.",
+            "keywords": [
+                "comments",
+                "silverstripe"
+            ],
+            "time": "2016-11-16 23:39:49"
         },
         {
             "name": "silverstripe/framework",

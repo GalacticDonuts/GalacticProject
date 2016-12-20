@@ -310,8 +310,8 @@ th {
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?1481227856);
-  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?&1481227856#iefix) format("embedded-opentype"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff2?1481227856) format("woff2"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff?1481227856) format("woff"), url(/fonts/bootstrap/glyphicons-halflings-regular.ttf?1481227856) format("truetype"), url(/fonts/bootstrap/glyphicons-halflings-regular.svg?1481227856#glyphicons_halflingsregular) format("svg");
+  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?1481494022);
+  src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?&1481494022#iefix) format("embedded-opentype"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff2?1481494022) format("woff2"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff?1481494022) format("woff"), url(/fonts/bootstrap/glyphicons-halflings-regular.ttf?1481494022) format("truetype"), url(/fonts/bootstrap/glyphicons-halflings-regular.svg?1481494022#glyphicons_halflingsregular) format("svg");
 }
 .glyphicon {
   position: relative;
@@ -7492,11 +7492,6 @@ html {
   min-height: 100%;
 }
 
-.col-sm-8 {
-  padding-right: 0px;
-  padding-left: 0px;
-}
-
 .navbar-default .navbar-nav > li > a {
   color: #fff;
   padding: 15px;
@@ -7521,6 +7516,29 @@ html {
   }
 }
 
+form {
+  margin-bottom: 20px;
+}
+
+.blog_title {
+  min-height: 30px;
+}
+@media (min-width: 767px) {
+  .blog_title {
+    min-height: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .blog_title {
+    min-height: 130px;
+  }
+}
+@media (min-width: 1200px) {
+  .blog_title {
+    min-height: 50px;
+  }
+}
+
 body {
   background-color: #0B1C28;
   margin: 0 0 70px;
@@ -7540,6 +7558,10 @@ body {
   .xs-center {
     text-align: center;
   }
+}
+
+.blog-post-meta {
+  font-size: 12px;
 }
 
 .blog_header {
@@ -7578,6 +7600,13 @@ body {
 .blogPost_content {
   margin-top: 20px;
   text-align: center;
+}
+
+.comments-form {
+  margin-top: 30px;
+}
+.comments-form fieldset input, .comments-form fieldset textarea {
+  width: 100%;
 }
 
 .post-summary {
@@ -7624,7 +7653,8 @@ a.footer_twitter-link:hover {
 }
 
 .page {
-  margin: 200px auto;
+  margin-top: 100px;
+  margin-bottom: 200px;
 }
 
 .footer {
@@ -7682,7 +7712,7 @@ video {
 }
 
 .userform_header {
-  margin-bottom: 150px;
+  margin-bottom: 100px;
 }
 .userform_content {
   display: block;
