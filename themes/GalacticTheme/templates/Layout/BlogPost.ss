@@ -10,7 +10,7 @@
 						<img src="$Authors.First.BlogProfileImage.Fill(200,200).URL" class="img-responsive img-circle center-block">
 
 						<p></p>
-						<h2>$Authors.First.FirstName</h2>
+						<h2>$Authors.First.FirstName $Authors.First.Surname</h2>
 						<p>$Authors.First.BlogProfileSummary</p>
 					
 					</div>
@@ -25,6 +25,7 @@
 							<div class="content">
 								$Content
 							</div>
+						<hr>
 						<% include EntryMeta %>
 					</div>
 				</div>
@@ -40,7 +41,7 @@
 			</article>
 
 			<div class="row userform_content">
-				<div class="col-sm-8 col-sm-offset-2">
+				<div class="col-lg-8 col-md-10 col-lg-offset-2 col-md-offset-1">
 					<%-- <img src="assets/Uploads/CyD1xjQUUAAehPl.png-large.png" class="img-responsive xs-center-block"> --%>
 					
 					<div class="comments-form">

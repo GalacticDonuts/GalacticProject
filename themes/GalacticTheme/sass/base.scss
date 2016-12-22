@@ -104,16 +104,19 @@ body {
 }
 
 
-.blog-post-meta{
-	font-size: 12px;
-}
 
 
-// ========== BLOG STYLES ==============
+
+//========== BLOG STYLES ==============
 .blog_header{
 
 	margin-top: 60px;
 }
+
+.blog-post-meta{
+	font-size: 11px;
+}
+
 
 .bloglanding{
 
@@ -152,21 +155,23 @@ body {
 		// min-height: 50px;
 
 		@media(min-width: 767px){
-			min-height: 190px;
+			min-height: 170px;
 		}
 		@media(min-width: 992px){
-			min-height: 300px;
+			min-height: 250px;
 		}
 		@media(min-width: 1200px){
-			min-height: 230px;
+			min-height: 200px;
 		}
+
 	}
 
 }
 
 #Form_CommentsForm{
 
-
+	width: 100%;
+	margin-bottom: 40px;
 }
 
 .blogPost{
@@ -199,12 +204,11 @@ body {
 
 .comments-form {
 
-	margin-top: 30px;
+	margin-top: 50px;
 
 	fieldset {
 		input, textarea {
 			width: 100%;
-
 		}
 	}
 }

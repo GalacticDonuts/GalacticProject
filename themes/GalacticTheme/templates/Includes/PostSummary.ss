@@ -19,11 +19,9 @@
 
 	<div class="bloglanding_hr">   
 		<% if $Summary %>
-			$test
-			$truncate($Summary, 0, 150);
+			$Summary.LimitCharacters(150)
 		<% else %>
-			$test
-			<p>$Excerpt</p>
+			<p>$Content.LimitCharacters(150)</p>
 		<% end_if %>
 	    <p>
 			<a href="$Link">
@@ -35,6 +33,6 @@
 	
 		<hr>
 		<% include EntryMeta %>
-	
+		
 
 </div>
