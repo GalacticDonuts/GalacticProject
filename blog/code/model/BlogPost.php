@@ -683,6 +683,7 @@ class BlogPost extends Page
         $labels['Title'] = _t('BlogPost.PageTitleLabel', 'Post Title');
 
         return $labels;
+        die;
     }
 
     /**
@@ -707,6 +708,7 @@ class BlogPost extends Page
             $this->Authors()->add($member);
         }
     }
+
 }
 
 /**

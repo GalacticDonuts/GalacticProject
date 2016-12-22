@@ -2,7 +2,7 @@
 
 <div class="col-xs-12 col-sm-6 col-md-3 post-summary xs-center">
 	
-	<div class="blog_title">
+	<div class="bloglanding_blog_title">
 		<h2>
 			<a href="$Link" title="<%t Blog.ReadMoreAbout "Read more about '{title}'..." title=$Title %>">
 				<% if $MenuTitle %>$MenuTitle
@@ -17,18 +17,23 @@
 		</a>
 	</p>
 
-	<% if $Summary %>
-		$Summary
-	<% else %>
-		<p>$Excerpt</p>
-	<% end_if %>
+	<div class="bloglanding_hr">   
+		<% if $Summary %>
+			$test
+			$truncate($Summary, 0, 150);
+		<% else %>
+			$test
+			<p>$Excerpt</p>
+		<% end_if %>
 	    <p>
 			<a href="$Link">
 				<%t Blog.ReadMoreAbout "Read more about '{title}'..." title=$Title %>
 			</a>
 		</p>
+	</div>
 
 	
+		<hr>
 		<% include EntryMeta %>
 	
 

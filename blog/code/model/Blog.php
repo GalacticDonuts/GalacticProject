@@ -1128,4 +1128,5 @@ class Blog_Controller extends Page_Controller
             return false;
         }
     }
+
 }
