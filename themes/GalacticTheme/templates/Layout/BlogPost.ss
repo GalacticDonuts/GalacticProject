@@ -4,7 +4,7 @@
 		<div class="container">
 			<article>	
 				
-				<div class="row blogPost_profile_header">
+				<div class="row blogPost_profile_header hidden-xs">
 					<div class="col-sm-12">
 						
 						<img src="$Authors.First.BlogProfileImage.Fill(200,200).URL" class="img-responsive img-circle center-block">
@@ -30,6 +30,18 @@
 					</div>
 				</div>
 
+
+				<div class="row blogPost_profile_header hidden-lg hidden-sm hidden-md profile_footer">
+					<div class="col-sm-12">
+						
+						<img src="$Authors.First.BlogProfileImage.Fill(200,200).URL" class="img-responsive img-circle center-block">
+
+						<p></p>
+						<h2>$Authors.First.FirstName $Authors.First.Surname</h2>
+						<p>$Authors.First.BlogProfileSummary</p>
+					
+					</div>
+				</div>
 
 
 				<%-- <% if $FeaturedImage %>
