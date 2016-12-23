@@ -728,16 +728,16 @@
         },
         {
             "name": "silverstripe/userforms",
-            "version": "4.2.0",
+            "version": "4.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-userforms.git",
-                "reference": "ba503d380348b96a29a55802ae21a3c4055d8e7c"
+                "reference": "2c0c03435d899f2b5087ad1fbdc3d27ac8eb6d86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/ba503d380348b96a29a55802ae21a3c4055d8e7c",
-                "reference": "ba503d380348b96a29a55802ae21a3c4055d8e7c",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/2c0c03435d899f2b5087ad1fbdc3d27ac8eb6d86",
+                "reference": "2c0c03435d899f2b5087ad1fbdc3d27ac8eb6d86",
                 "shasum": ""
             },
             "require": {
@@ -782,7 +782,7 @@
                 "silverstripe",
                 "userforms"
             ],
-            "time": "2016-11-16 23:39:49"
+            "time": "2016-12-21 02:56:13"
         }
     ],
     "packages-dev": [
